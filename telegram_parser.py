@@ -23,7 +23,7 @@ class TelegramConfig:
 
         # Дополнительные параметры
         self.session_name = os.getenv('TELEGRAM_SESSION', 'telegram_session')
-        self.search_limit = int(os.getenv('TELEGRAM_SEARCH_LIMIT', '2'))
+        self.search_limit = int(os.getenv('TELEGRAM_SEARCH_LIMIT', '10000'))
         self.template_url = os.getenv('TELEGRAM_TEMPLATE_URL', 'https://t.me/s/{CHANNEL_NAME}/{ID_MESSAGE}')
         self.max_retries = int(os.getenv('TELEGRAM_MAX_RETRIES', '3'))
         self.batch_size = int(os.getenv('TELEGRAM_BATCH_SIZE', '3'))
